@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let mainVC = DrawOViewController()
+        let mainVC = DropBallViewController()
         let navigation = UINavigationController(rootViewController: mainVC)
         
         window?.rootViewController = mainVC

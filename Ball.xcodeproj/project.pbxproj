@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0438206123F5369200D76116 /* DropBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438206023F5369200D76116 /* DropBallViewController.swift */; };
 		046E8BCD23F510E100FA6C78 /* DrawZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E8BCB23F510E100FA6C78 /* DrawZViewController.swift */; };
 		046E8BD023F5190100FA6C78 /* DrawOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E8BCF23F5190100FA6C78 /* DrawOViewController.swift */; };
 		A9764D3D22A2310300DAACB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9764D3C22A2310300DAACB2 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0438206023F5369200D76116 /* DropBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropBallViewController.swift; sourceTree = "<group>"; };
 		046E8BCB23F510E100FA6C78 /* DrawZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawZViewController.swift; sourceTree = "<group>"; };
 		046E8BCF23F5190100FA6C78 /* DrawOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawOViewController.swift; sourceTree = "<group>"; };
 		A9764D3222A2310200DAACB2 /* Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 				A9764D5622A236C900DAACB2 /* BallFallsAnimate.xib */,
 				046E8BCB23F510E100FA6C78 /* DrawZViewController.swift */,
 				046E8BCF23F5190100FA6C78 /* DrawOViewController.swift */,
+				0438206023F5369200D76116 /* DropBallViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				046E8BD023F5190100FA6C78 /* DrawOViewController.swift in Sources */,
 				A9764D4D22A2313700DAACB2 /* MainViewController.swift in Sources */,
 				A9764D5722A236C900DAACB2 /* BallFallsAnimate.swift in Sources */,
+				0438206123F5369200D76116 /* DropBallViewController.swift in Sources */,
 				A9764D5322A2342000DAACB2 /* BallFallsTimer.swift in Sources */,
 				A9764D5D22A23A2000DAACB2 /* CircleLayerView.swift in Sources */,
 				A9764D4C22A2313700DAACB2 /* AppDelegate.swift in Sources */,
