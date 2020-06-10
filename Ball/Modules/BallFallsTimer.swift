@@ -21,7 +21,7 @@ class BallFallsTimer: UIViewController {
     var timer = Timer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        y = ballImageView.frame.origin.y
+        y = ballImageView.frame.origin.y + 100
         timer = Timer.scheduledTimer(timeInterval: 0.009, target: self, selector: #selector(runTimer), userInfo: nil, repeats: true)
     }
     

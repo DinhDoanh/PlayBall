@@ -10,6 +10,10 @@ import UIKit
 
 class DrawOViewController: UIViewController {
     
+    deinit {
+        print("Deinit DrawOViewController")
+    }
+    
     var ball: UIImageView!
     let radius: CGFloat = 50.0
     
@@ -23,7 +27,7 @@ class DrawOViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        ball = UIImageView(frame: CGRect(x: 0, y: 0, width: radius, height: radius))
+        ball = UIImageView(frame: CGRect(x: 0, y: 100, width: radius, height: radius))
         ball.image = UIImage(named: "bong")
         ball.contentMode = .scaleAspectFit
         view.addSubview(ball)
@@ -35,7 +39,7 @@ class DrawOViewController: UIViewController {
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self,   selector: (#selector(runningFunction)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self,   selector: (#selector(runningFunction)), userInfo: nil, repeats: true)
     }
     
     @objc func runningFunction(){
@@ -58,9 +62,9 @@ class DrawOViewController: UIViewController {
                     if bienY > 0 {
                         setY(y: bienY)
                         bienY = bienY - 5
-                    } else {
-                        diNgang = false
-                        diDoc = false
+                        if self.ball.frame.origin.y <= 100 {
+                            timer.invalidate()
+                        }
                     }
                 }
             }

@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let mainVC = DropBallViewController()
+        let mainVC = MainViewController()
         let navigation = UINavigationController(rootViewController: mainVC)
         
-        window?.rootViewController = mainVC
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         
         return true

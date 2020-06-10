@@ -9,13 +9,17 @@
 import UIKit
 
 class DroppingBall: UIViewController {
-
+    
+    deinit {
+        print("Deinit DroppingBall")
+    }
+    
     var ball: CircleLayerView!
     var timer: Timer!
     
     let ball_y_origin: CGFloat = 100.0
     // gia tốc
-    let a: CGFloat = 1.0 //
+    let a: CGFloat = 1.0
     // v vận tốc ban đầu
     var v: CGFloat = 0.0
     var y: CGFloat!
@@ -38,23 +42,17 @@ class DroppingBall: UIViewController {
         
     }
     
-    override var prefersStatusBarHidden : Bool {
-        return false
-    }
-    
     @objc func timerLoop() {
-//        timer.invalidate()
         v = v + a
-        print("v: \(v)")
         y = y + v
-        print("y: \(y!)")
         if y > height - 12 - radius{
             y = height - 12 - radius
-            print("height - radius: \(y)")
             v = -v * 0.8
             print("-v * 0.8: \(v)")
+            if v >= -0.5 {
+                timer.invalidate()
+            }
         }
         ball.center = CGPoint(x: ball.center.x, y: y)
-        
     }
 }

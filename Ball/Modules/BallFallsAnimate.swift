@@ -10,6 +10,10 @@ import UIKit
 
 class BallFallsAnimate: UIViewController {
 
+    deinit {
+        print("Deinit BallFallsAnimate")
+    }
+    
     @IBOutlet weak var ballImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()

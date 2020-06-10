@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Tutorial TableView"
+        title = "Play Ball"
         setupTableView()
         setupData()
     }
@@ -32,12 +32,14 @@ class MainViewController: UIViewController {
     
     func setupData(){
         sections = [
-            Section(title: "Dynamic",
+            Section(title: "Ball Falls",
                     menu: [
                         Menu(title: "The ball falls timer", identifier: "BallFallsTimer"),
                         Menu(title: "The ball falls animate", identifier: "BallFallsAnimate"),
                         Menu(title: "Dropping ball", identifier: "DroppingBall"),
-                        Menu(title: "Draw O", identifier: "DrawOViewController")
+                        Menu(title: "Draw O", identifier: "DrawOViewController"),
+                        Menu(title: "Draw Z", identifier: "DrawZViewController"),
+                        Menu(title: "DropBallViewController", identifier: "DropBallViewController")
                         ])
         ]
     }
@@ -95,6 +97,4 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         navigationController?.pushViewController(detailScreen, animated: true)
         
     }
-    
-    
 }

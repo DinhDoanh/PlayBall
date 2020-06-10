@@ -10,6 +10,10 @@ import UIKit
 
 class DropBallViewController: UIViewController {
 
+    deinit {
+        print("Deinit DropBallViewController")
+    }
+    
     var ballImageView : UIImageView!
     var timer: Timer!
     var yBanDau: CGFloat = 100
